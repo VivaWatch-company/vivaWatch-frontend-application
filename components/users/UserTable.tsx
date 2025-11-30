@@ -1,4 +1,3 @@
-// components/users/UserTable.tsx
 'use client';
 
 import { User } from '@/types';
@@ -24,7 +23,16 @@ const getRoleColor = (role: User['role']): 'blue' | 'green' | 'default' => {
 };
 
 const getRoleLabel = (role: User['role']) => {
-  return role.charAt(0).toUpperCase() + role.slice(1);
+  switch (role) {
+    case 'admin':
+      return 'Admin';
+    case 'caregiver':
+      return 'Cuidador';
+    case 'elderly':
+      return 'Idoso';
+    default:
+      return role;
+  }
 };
 
 export function UserTable({ users }: UserTableProps) {
@@ -33,13 +41,13 @@ export function UserTable({ users }: UserTableProps) {
       <table className="w-full">
         <thead>
           <tr className="border-b text-left text-sm font-medium text-gray-600">
-            <th className="px-6 py-4">Name</th>
-            <th className="px-6 py-4">Email</th>
-            <th className="px-6 py-4">Type</th>
-            <th className="px-6 py-4 text-center">Devices</th>
-            <th className="px-6 py-4">Created on</th>
-            <th className="px-6 py-4 text-right">Actions</th>
-          </tr>
+            <th className="px-6 py-4">Nome</th>
+            <th className="px-6 py-4">E-mail</th>
+            <th className="px-6 py-4">Tipo</th>
+            <th className="px-6 py-4 text-center">Nº Dispositivos</th>
+            <th className="px-6 py-4">Criado em</th>
+            <th className="px-6 py-4 text-right">Ações</th>
+;          </tr>
         </thead>
         <tbody>
           {users.map((user) => (

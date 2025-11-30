@@ -1,4 +1,3 @@
-// components/ui/Button.tsx
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
@@ -20,10 +19,8 @@ export function Button({
       className={cn(
         'inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
         {
-          // variants
           'bg-blue-600 text-white hover:bg-blue-700 focus-visible:ring-blue-500': variant === 'primary',
           'text-gray-600 hover:bg-gray-100 hover:text-gray-900': variant === 'ghost',
-          // sizes
           'h-10 px-4 py-2 text-sm': size === 'default',
           'h-8 px-3 text-xs': size === 'sm',
         },

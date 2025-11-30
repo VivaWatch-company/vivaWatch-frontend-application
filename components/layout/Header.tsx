@@ -9,7 +9,6 @@ export function Header() {
       <h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>
 
       <div className="flex items-center space-x-4">
-        {/* Notifications */}
         <button className="relative p-2 text-gray-600 hover:bg-gray-100 rounded-lg">
           <Bell className="h-5 w-5" />
           <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-red-500"></span>
@@ -18,7 +17,6 @@ export function Header() {
           </span>
         </button>
 
-        {/* Admin profile */}
         <div className="flex items-center space-x-3">
           <div className="text-right">
             <p className="text-sm font-medium text-gray-900">Admin</p>

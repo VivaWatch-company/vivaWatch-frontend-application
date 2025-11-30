@@ -9,7 +9,9 @@ import {
   Settings,
   LogOut,
   Plus,
+  Smartphone,
   ChevronLeft,
+  ChevronRight,
 } from 'lucide-react';
 
 export {
@@ -24,4 +26,6 @@ export {
   LogOut,
   Plus,
   ChevronLeft,
+  ChevronRight,
+  Smartphone,
 };
