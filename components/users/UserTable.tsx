@@ -47,7 +47,7 @@ export function UserTable({ users }: UserTableProps) {
             <th className="px-6 py-4 text-center">Nº Dispositivos</th>
             <th className="px-6 py-4">Criado em</th>
             <th className="px-6 py-4 text-right">Ações</th>
-;          </tr>
+          </tr>
         </thead>
         <tbody>
           {users.map((user) => (
