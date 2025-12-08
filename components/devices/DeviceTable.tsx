@@ -11,7 +11,7 @@ import { DeviceModal } from './DeviceModal';
 
 interface DeviceTableProps {
   devices: Device[];
-  onUpdate: (updatedDevice: Device) => void;  // para edição
+  onUpdate: (updatedDevice: Device) => void; 
 }
 
 export function DeviceTable({ devices, onUpdate }: DeviceTableProps) {
