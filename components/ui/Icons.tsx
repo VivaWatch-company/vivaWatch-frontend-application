@@ -14,6 +14,8 @@ import {
   ChevronRight,
   Heart,
   Activity,
+  X,
+  Eye,
 } from 'lucide-react';
 
 export {
@@ -32,4 +34,6 @@ export {
   Smartphone,
   Heart, 
   Activity,
+  X,
+  Eye,
 };
