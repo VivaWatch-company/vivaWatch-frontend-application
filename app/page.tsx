@@ -1,5 +1,16 @@
 import { redirect } from 'next/navigation';
 
 export default function HomePage() {
-  redirect('/dashboard/users');
+  return (
+    <main style={{ 
+      display: 'flex', 
+      flexDirection: 'column', 
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      height: '100vh',
+      fontFamily: 'sans-serif'
+    }}>
+      <h1>Página em construção </h1>
+    </main>
+  );
 }

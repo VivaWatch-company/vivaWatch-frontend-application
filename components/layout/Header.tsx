@@ -1,5 +1,3 @@
-'use client';
-
 import { Bell, User } from '@/components/ui/Icons';
 import { Badge } from '@/components/ui/Badge';
 

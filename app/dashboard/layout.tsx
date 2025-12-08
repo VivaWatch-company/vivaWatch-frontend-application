@@ -1,9 +1,9 @@
-import { DashboardLayout } from '@/components/layout/DashboardLayout';
+import { PrivateLayout } from '@/components/layout/PrivateLayout';
 
 export default function DashboardRootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <DashboardLayout>{children}</DashboardLayout>;
+  return <PrivateLayout>{children}</PrivateLayout>;
 }

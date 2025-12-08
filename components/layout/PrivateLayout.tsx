@@ -1,7 +1,7 @@
 import { Sidebar } from './Sidebar';
 import { Header } from './Header';
 
-export function DashboardLayout({ children }: { children: React.ReactNode }) {
+export function PrivateLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen bg-gray-50">
       <Sidebar />

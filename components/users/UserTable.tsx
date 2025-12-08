@@ -1,6 +1,7 @@
 'use client';
 
 import { User } from '@/types';
+import { getRoleColor, getRoleLabel } from '@/lib/roleUtils';
 import { Badge } from '@/components/ui/Badge';
 import { Button } from '@/components/ui/Button';
 import { Edit, Trash2 } from '@/components/ui/Icons';
@@ -8,32 +9,6 @@ import { Edit, Trash2 } from '@/components/ui/Icons';
 interface UserTableProps {
   users: User[];
 }
-
-const getRoleColor = (role: User['role']): 'blue' | 'green' | 'default' => {
-  switch (role) {
-    case 'admin':
-      return 'blue';
-    case 'caregiver':
-      return 'green';
-    case 'elderly':
-      return 'default';
-    default:
-      return 'default';
-  }
-};
-
-const getRoleLabel = (role: User['role']) => {
-  switch (role) {
-    case 'admin':
-      return 'Admin';
-    case 'caregiver':
-      return 'Cuidador';
-    case 'elderly':
-      return 'Idoso';
-    default:
-      return role;
-  }
-};
 
 export function UserTable({ users }: UserTableProps) {
   return (
