@@ -28,7 +28,7 @@ export function RealTimeEvents({ events }: RealTimeEventsProps) {
                   event.color === 'green' && 'text-green-500'
                 )}
               />
-              <span>{event.description}</span>
+              <span  className="text-gray-700">{event.description}</span>
             </div>
             <span className="text-gray-500">{event.time}</span>
           </li>

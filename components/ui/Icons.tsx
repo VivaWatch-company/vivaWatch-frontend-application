@@ -12,6 +12,8 @@ import {
   Smartphone,
   ChevronLeft,
   ChevronRight,
+  Heart,
+  Activity,
 } from 'lucide-react';
 
 export {
@@ -28,4 +30,6 @@ export {
   ChevronLeft,
   ChevronRight,
   Smartphone,
+  Heart, 
+  Activity,
 };
