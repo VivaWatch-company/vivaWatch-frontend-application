@@ -16,6 +16,7 @@ import {
   Activity,
   X,
   Eye,
+  AlertTriangle,
 } from 'lucide-react';
 
 export {
@@ -36,4 +37,5 @@ export {
   Activity,
   X,
   Eye,
+  AlertTriangle
 };
